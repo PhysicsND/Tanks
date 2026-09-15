@@ -978,11 +978,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Menus
       objectReference: {fileID: 0}
+    - target: {fileID: 7609624745474981709, guid: 328826c1fd47c3e4bb07a1dec3ec4c19, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 328826c1fd47c3e4bb07a1dec3ec4c19, type: 3}
+--- !u!1 &1180462615 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7609624745474981709, guid: 328826c1fd47c3e4bb07a1dec3ec4c19, type: 3}
+  m_PrefabInstance: {fileID: 1117082584}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1201879249
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,10 +1160,10 @@ MonoBehaviour:
   m_StartDelay: 3
   m_EndDelay: 3
   m_CameraControl: {fileID: 1574856647}
-  m_Tank1Prefab: {fileID: 5304605741446446971}
-  m_Tank2Prefab: {fileID: 5304605741446446971}
-  m_Tank3Prefab: {fileID: 128693714706770100}
-  m_Tank4Prefab: {fileID: 128693714706770100}
+  m_Tank1Prefab: {fileID: 2662071291964438345, guid: d70fa809b4c2b0647b2d5e8385a336a3, type: 3}
+  m_Tank2Prefab: {fileID: 2662071291964438345, guid: d70fa809b4c2b0647b2d5e8385a336a3, type: 3}
+  m_Tank3Prefab: {fileID: 5992933547588874528, guid: 2e9e5cef20c7b994e88ec309c7c87aa8, type: 3}
+  m_Tank4Prefab: {fileID: 5992933547588874528, guid: 2e9e5cef20c7b994e88ec309c7c87aa8, type: 3}
   m_SpawnPoints:
   - m_PlayerColor: {r: 0, g: 0, b: 0, a: 0}
     m_SpawnPoint: {fileID: 2034066824}
@@ -1449,7 +1458,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1845057173}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1180462615}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 51949327}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1845057173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1627,11 +1660,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e9e5cef20c7b994e88ec309c7c87aa8, type: 3}
---- !u!1 &128693714706770100 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5992933547588874528, guid: 2e9e5cef20c7b994e88ec309c7c87aa8, type: 3}
-  m_PrefabInstance: {fileID: 128693714706770099}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5304605741446446970
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1705,11 +1733,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d70fa809b4c2b0647b2d5e8385a336a3, type: 3}
---- !u!1 &5304605741446446971 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2662071291964438345, guid: d70fa809b4c2b0647b2d5e8385a336a3, type: 3}
-  m_PrefabInstance: {fileID: 5304605741446446970}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
